@@ -16,8 +16,8 @@ function App() {
   const swap=()=>{
     setfrom(to);
     setto(from);
-    setconvertedAmount(amount);
     setamount(convertedAmount);
+    setconvertedAmount(amount);
   }
 
 
@@ -54,7 +54,7 @@ useEffect(() => {
                             label="From"
                             amount={amount}
                             currencyOptions={options}
-                            onCurrrencyChange={(currency)=>{setfrom(currency)}}
+                            onCurrencyChange={(currency)=>{setfrom(currency)}}
                             selectCurrency={from}
                             onAmountChange={(amount)=>setamount(amount)}
                         />
@@ -73,7 +73,7 @@ useEffect(() => {
                             label="to"
                             amount={convertedAmount}
                             currencyOptions={options}
-                            onCurrrencyChange={(currency)=> {setto(currency)}}
+                            onCurrencyChange={(currency)=> {setto(currency)}}
                             selectCurrency={to}
                             amountDisabled
                             

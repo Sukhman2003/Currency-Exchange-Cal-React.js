@@ -4,7 +4,7 @@ function InputBox({
     label,
     amount,
     onAmountChange,
-    onCurrrencyChange,
+    onCurrencyChange,
     currencyOptions=[],
     selectCurrency="usd",
     amountDisabled=false,
@@ -35,7 +35,7 @@ function InputBox({
                 <select
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
                     value={selectCurrency}
-                    onCurrrencyChange={(e)=>{onCurrrencyChange(e.target.value)}}
+                    onChange={(e) => { onCurrencyChange(e.target.value) }}
                     disabled={currencyDisabled}
                 >
                     
